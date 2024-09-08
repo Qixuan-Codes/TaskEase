@@ -33,8 +33,8 @@ npm install
 ```
 
 ## Firebase Setup
-1. Create a Firebase project here.
-2. Set up Firebase Authentication and Firestore.
+1. Create a Firebase project.
+2. Set up Firebase Authentication and Real-Time Database.
 3. Create a file named .env in the root of the project and add your Firebase configuration (ensure to add .env to .gitignore to keep it secure):
 
 ```
@@ -44,12 +44,51 @@ FIREBASE_PROJECT_ID=your-project-id
 FIREBASE_STORAGE_BUCKET=your-storage-bucket
 FIREBASE_MESSAGING_SENDER_ID=your-messaging-sender-id
 FIREBASE_APP_ID=your-app-id
+FIREBASE_DATABASE_URL=your-database-url
 ```
 
-## Run the App
+## Run The App
 Start the Expo development server by running:
 ```
 npx expo start
+```
+To run the app on Android or iOS emulator:
+- Android: press **a** after running to open the app in an Android emulator. (You will need to have Android Studio installed)
+- iOS: press **i** after running to open the app in an iOS emulator. (Only for Apple devices)
+
+Alternatively, you can scan the QR code provided by Expo using the Expo Go app on your mobile phone to run the app directly on your device
+
+## Build the App
+You can run your app in the Expo development environment or generate builds for Android/iOS using the following commands:
+
+1. Install Expo CLI: If you haven't installed Expo CLI yet, run the following command:
+```
+npm install -g expo-cli
+```
+
+2. Login to Expo: Make sure you're logged in to your Expo account, If you're not, log in using:
+```
+expo login
+```
+
+3. Install EAS CLI: Install EAS CLI globally if you haven't:
+```
+npm install -g eas-cli
+```
+
+4. Initialise EAS in the project directory, run:
+```
+eas build:configure
+```
+
+For Android run the following:
+```
+eas build --platform android
+```
+
+For iOS run the following:
+```
+eas build --platform ios
 ```
 
 # License
