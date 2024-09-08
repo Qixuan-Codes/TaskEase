@@ -8,7 +8,7 @@ node_modules/
 dist/
 web-build/
 
-# Native
+# Native files
 *.orig.*
 *.jks
 *.p8
@@ -19,17 +19,22 @@ web-build/
 # Metro
 .metro-health-check*
 
-# debug
+# Debug logs
 npm-debug.*
 yarn-debug.*
 yarn-error.*
 
-# macOS
+# macOS specific files
 .DS_Store
 *.pem
 
-# local env files
+# Local environment variables
+.env
 .env*.local
 
-# typescript
+# TypeScript build files
 *.tsbuildinfo
+
+# Expo-cli generated patterns (sync)
+# @generated expo-cli sync-b5df6a44d8735348b729920a7406b633cfb74d4c
+# @end expo-cli
