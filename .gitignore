@@ -1,0 +1,40 @@
+# Learn more https://docs.github.com/en/get-started/getting-started-with-git/ignoring-files
+
+# dependencies
+node_modules/
+
+# Expo
+.expo/
+dist/
+web-build/
+
+# Native files
+*.orig.*
+*.jks
+*.p8
+*.p12
+*.key
+*.mobileprovision
+
+# Metro
+.metro-health-check*
+
+# Debug logs
+npm-debug.*
+yarn-debug.*
+yarn-error.*
+
+# macOS specific files
+.DS_Store
+*.pem
+
+# Local environment variables
+.env
+.env*.local
+
+# TypeScript build files
+*.tsbuildinfo
+
+# Expo-cli generated patterns (sync)
+# @generated expo-cli sync-b5df6a44d8735348b729920a7406b633cfb74d4c
+# @end expo-cli
